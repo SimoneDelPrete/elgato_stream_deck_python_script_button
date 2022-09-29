@@ -2,7 +2,7 @@ from os import system
 
 
 def main():
-    if system('xdotool search --desktop 0 --class "Microsoft Teams - Preview"') != 0:
+    if system('xdotool search --desktop 0 --class "microsoft Teams - Preview"') != 0:
         system("teams")
 
 
