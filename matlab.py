@@ -1,5 +1,4 @@
 from os import system
-from subprocess import run
 
 
 def main():
@@ -9,7 +8,7 @@ def main():
         )
         != 0
     ):
-        system("gnome-terminal -e 'bash -c \"matlab ~ & ; bash\" '")
+        system('gnome-terminal --tab --active -- bash -c "cd ~; matlab ; exec bash"')
 
 
 if __name__ == "__main__":
